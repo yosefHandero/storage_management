@@ -1,4 +1,31 @@
-<svg width="83" height="82" viewBox="0 0 83 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect opacity="0.2" width="74.8323" height="74.8323" rx="37.4161" fill="#FA7275"/>
-<rect x="32.7383" y="31.1797" width="49.8882" height="49.8882" rx="24.9441" fill="#FA7275"/>
+<svg width="240" height="120" viewBox="0 0 240 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle to give a soft gradient and depth -->
+  <circle cx="60" cy="60" r="58" fill="url(#bgGradient)" />
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="0" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A0CFFF" />
+      <stop offset="1" stop-color="#CCE8FF" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main cloud body -->
+  <path d="M40 70C40 62.268 46.268 56 54 56C55.681 56 57.308 56.351 58.823 56.981C60.662 54.125 64.112 52 68 52C73.523 52 78 56.477 78 62C78 62.249 77.989 62.497 77.967 62.744C81.532 63.64 84 66.735 84 70.5C84 75.194 79.928 79 74.5 79H44C41.238 79 39 76.762 39 74C39 71.615 39.772 70.221 40 70Z" fill="#FFFFFF" />
+
+  <!-- Simulated document -->
+  <rect x="50" y="38" width="24" height="34" rx="2" fill="#E2E8F0" />
+  <line x1="53" y1="43" x2="71" y2="43" stroke="#A0AEC0" stroke-width="2" />
+  <line x1="53" y1="48" x2="71" y2="48" stroke="#A0AEC0" stroke-width="2" />
+  <line x1="53" y1="53" x2="71" y2="53" stroke="#A0AEC0" stroke-width="2" />
+  <line x1="53" y1="58" x2="65" y2="58" stroke="#A0AEC0" stroke-width="2" />
+
+  <!-- Upload Arrow -->
+  <path d="M60 28L65 33H57L60 28Z" fill="#3182CE" />
+  <line x1="60" y1="33" x2="60" y2="38" stroke="#3182CE" stroke-width="2" />
+
+  <!-- Download Arrow -->
+  <path d="M60 92L55 87H63L60 92Z" fill="#2B6CB0" />
+  <line x1="60" y1="87" x2="60" y2="82" stroke="#2B6CB0" stroke-width="2" />
+
+  <!-- FileNest text -->
+ 
 </svg>

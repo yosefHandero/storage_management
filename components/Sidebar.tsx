@@ -15,19 +15,20 @@ interface Props {
 const Sidebar = ({ fullName, avatar, email }: Props) => {
   const pathname = usePathname();
 
+
   return (
     <aside className="sidebar">
       <Link href="/">
         <Image
-          src="/assets/icons/logo-full-brand.svg"
+          src="/assets/images/file-management.png"
           alt="logo"
-          width={160}
+          width={120}
           height={50}
           className="hidden h-auto lg:block"
         />
 
         <Image
-          src="/assets/icons/logo-brand.svg"
+          src="/assets/images/file-management.png"
           alt="logo"
           width={52}
           height={52}
@@ -35,14 +36,14 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
         />
       </Link>
 
-      <nav className="sidebar-nav">
+      <nav className="sidebar-nav ">
         <ul className="flex flex-1 flex-col gap-6">
           {navItems.map(({ url, name, icon }) => (
             <Link key={name} href={url} className="lg:w-full">
               <li
                 className={cn(
-                  "sidebar-nav-item",
-                  pathname === url && "shad-active",
+                  "sidebar-nav-item ",
+                  pathname === url && "shad-active"
                 )}
               >
                 <Image
@@ -52,7 +53,7 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
                   height={24}
                   className={cn(
                     "nav-icon",
-                    pathname === url && "nav-icon-active",
+                    pathname === url && "nav-icon-active"
                   )}
                 />
                 <p className="hidden lg:block">{name}</p>
@@ -69,7 +70,7 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
         height={418}
         className="w-full"
       />
-
+      
       <div className="sidebar-user-info">
         <Image
           src={avatar}
